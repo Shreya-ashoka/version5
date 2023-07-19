@@ -1,0 +1,38 @@
+Algorithm
+1.start
+2.// Function to return gcd of a and b
+3.if(a==0)
+  return b;
+  return gcd(b % a, a);
+4. end of if loop
+5.Initialize a and b
+6. Function call
+    printf("GCD(%d, %d) = %d\n", a, b, gcd(a, b));
+    a = 35, b = 10;
+7.end
+
+
+
+#include <stdio.h>
+ 
+// Function to return gcd of a and b
+int gcd(int a, int b)
+{
+    if (a == 0)
+        return b;
+    return gcd(b % a, a);
+}
+ 
+// Driver code
+int main()
+{
+    int a = 10, b = 15;
+   
+      // Function call
+    printf("GCD(%d, %d) = %d\n", a, b, gcd(a, b));
+    a = 35, b = 10;
+    printf("GCD(%d, %d) = %d\n", a, b, gcd(a, b));
+    a = 31, b = 2;
+    printf("GCD(%d, %d) = %d\n", a, b, gcd(a, b));
+    return 0;
+}
